@@ -16,7 +16,7 @@ svn checkout http://svn.freebsd.org/base/release/10.2.0/ /usr/src
 
 ## Updates
 
-### Install postmaster
+### Install portmaster
 ```bash
 cd /usr/ports/ports-mgmt/portmaster && \
 make install clean

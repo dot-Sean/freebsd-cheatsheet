@@ -34,6 +34,5 @@ portsnap fetch update
 
 ### Fetch binary updates
 ```bash
-freebsd-update fetch && \
-freebsd-update install
+freebsd-update fetch install
 ```

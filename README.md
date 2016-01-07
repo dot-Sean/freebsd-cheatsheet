@@ -1,9 +1,9 @@
-# freebsd-cheatsheet
+# FreeBSD Cheatsheet
 > The handbook is great, but this is the short one.
 
 ## Table of Contents
 
-- Kernel(#kernel)
+- [Kernel](#kernel)
 
 
 ## Kernel

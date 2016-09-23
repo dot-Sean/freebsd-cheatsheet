@@ -4,6 +4,7 @@
 ## Table of Contents
 
 - [Kernel](#kernel)
+- [Updates](#updates)
 
 
 ## Kernel

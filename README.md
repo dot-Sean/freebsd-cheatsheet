@@ -10,7 +10,8 @@
 
 ### Install Kernel Sources
 ```bash
-svn checkout http://svn.freebsd.org/base/release/10.2.0/ /usr/src
+fetch ftp://ftp.freebsd.org/pub/FreeBSD/releases/amd64/10.3-RELEASE/src.txz
+tar -C / -xvzf src.txz
 ```
 
 

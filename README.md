@@ -3,9 +3,20 @@
 
 ## Table of Contents
 
+- [File Systems](#file-systems)
 - [Jails](#jails)
 - [Kernel](#kernel)
 - [Updates](#updates)
+
+
+## File Systems
+
+### Mount Linux EXT4 in LVM2
+```bash
+kldload /boot/kernel/geom_linux_lvm.ko
+pkg install fusefs-ext4fuse
+ext4fuse /dev/linux_lvm/volumegroup-logicalvolume /mnt
+```
 
 
 ## Jails

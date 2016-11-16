@@ -3,8 +3,18 @@
 
 ## Table of Contents
 
+- [Jails](#jails)
 - [Kernel](#kernel)
 - [Updates](#updates)
+
+
+## Jails
+
+### Completely Remove Jail Folders
+```bash
+chflags -R noschg /usr/jails && \
+rm -rf /usr/jails
+```
 
 
 ## Kernel

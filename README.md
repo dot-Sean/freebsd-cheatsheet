@@ -7,6 +7,7 @@
 - [Jails](#jails)
 - [Kernel](#kernel)
 - [Updates](#updates)
+- [ZFS](#zfs)
 
 
 ## File Systems
@@ -58,4 +59,13 @@ portsnap fetch update
 ### Fetch binary updates
 ```bash
 freebsd-update fetch install
+```
+
+
+## ZFS
+
+### Mount Pool with Different Root
+Useful for untrusted pools or ones that mount to system directories.
+```bash
+zpool import -f -R /mnt pool
 ```

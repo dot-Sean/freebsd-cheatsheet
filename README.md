@@ -6,6 +6,7 @@
 - [File Systems](#file-systems)
 - [Jails](#jails)
 - [Kernel](#kernel)
+- [Software](#software)
 - [Updates](#updates)
 - [ZFS](#zfs)
 
@@ -35,6 +36,15 @@ rm -rf /usr/jails
 ```bash
 fetch ftp://ftp.freebsd.org/pub/FreeBSD/releases/amd64/10.3-RELEASE/src.txz
 tar -C / -xvzf src.txz
+```
+
+
+## Software
+
+### Install Python with pip
+```bash
+pkg install python && \
+python -m ensurepip
 ```
 
 

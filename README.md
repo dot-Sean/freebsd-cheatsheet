@@ -90,7 +90,7 @@ zpool import -f -R /mnt pool
 ```
 
 ### Rescue ZFS-on-Root system
-Reboot machine from USB/CD/network image. Select "Live System", then:
+This comes in handy on `unable to remount devfs under dev` errors, for example. Reboot machine from USB/CD/network image. Select "Live System", then:
 ```bash
 mkdir /tmp/mnt
 zpool import -f -R /tmp/mnt zroot

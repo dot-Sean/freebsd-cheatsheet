@@ -88,3 +88,16 @@ Useful for untrusted pools or ones that mount to system directories.
 ```bash
 zpool import -f -R /mnt pool
 ```
+
+### Rescue ZFS-on-Root system
+Reboot machine from USB/CD/network image. Select "Live System", then:
+```bash
+mkdir /tmp/mnt
+zpool import -f -R /tmp/mnt zroot
+zfs mount zroot/ROOT/default
+chroot /tmp/mnt
+...make changes...
+exit
+zpool export zroot
+reboot
+```
